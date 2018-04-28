@@ -11,8 +11,35 @@ header {
     width: 50%;
 }
 
-#rules,
-#winsLosses {
+#rules {
     background-color: hsl(46, 81%, 42%);
     width: 50%;
+    border-style: double
+}
+
+#winsLosses {
+
+        background-color: rgb(8, 252, 28);
+        width: 20%;
+        text-align: center;
+        border-style: double
+    
+}
+
+#randomNum {
+    background-color: rgb(252, 8, 101);
+    width: 20%;
+    text-align: center;
+    border-style: double
+}
+
+#userNumber,
+#words {
+    background-color: rgb(252, 8, 101);
+    width: 20%;
+    text-align: center;
+    border-style: double;
+    padding: 40p;
+    height: 100 px;
+    width: 24%;
 }
