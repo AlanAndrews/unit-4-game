@@ -48,6 +48,7 @@ $(document).ready(function(){
         console.log(userNum)
         $("#userNumber").text(userNum);
         if (userNum == randomNum) {
+            wins++;
             $("#wins").text("Wins: " + wins);
             initializeGame();
             // wins();
@@ -72,6 +73,7 @@ $(document).ready(function(){
         console.log(userNum)
         $("#userNumber").text(userNum);
         if (userNum == randomNum) {
+            wins++;
             $("#wins").text("Wins: " + wins);
             initializeGame();
             // wins();
@@ -91,6 +93,7 @@ $(document).ready(function(){
         console.log(userNum)
         $("#userNumber").text(userNum);
         if (userNum == randomNum) {
+            wins++;
             $("#wins").text("Wins: " + wins);
             initializeGame();
             // wins();
@@ -115,6 +118,7 @@ $(document).ready(function(){
         console.log(userNum)
         $("#userNumber").text(userNum);
         if (userNum == randomNum) {
+            wins++;
             $("#wins").text("Wins: " + wins);
             initializeGame();
             // wins();
@@ -135,75 +139,3 @@ $(document).ready(function(){
     });
     
 });
-// $(document).ready(function(){
-//     // global variables
-//     var winCount = 0;
-//     var lossCount = 0;
-//     var randomNum = "";
-//     var userScore = "";
-//     var xtalOneClicked = 0;
-//     var xtalTwoClicked = false;
-//     var xtalThreeClicked = false;
-//     var xtalFourClicked = false;
-
-//     function initializeGame() {
-//         randomNum = "";
-//         userScore = "";
-        
-//         $("#randomNum", "#userScore").empty();
-//       }
-
-//     // Click listener that will trigger a random number to be generated upon click
-//         // generates a random number between 19 and 120
-//         var random = Math.floor(Math.random() * 121) + 19;
-//             console.log(random);
-//             $("#randomNum").text(random);
-        
-//         // Code that generates random number between 1 and 12 for each xtal upon clicking
-//         $("#crystalOne").on("click", function(){
-
-//             xtalOneClicked++;
-
-
-//             console.log(xtalOneClicked);
-//             var xtalOne = Math.floor(Math.random() * 12) + 1;
-//                 console.log(xtalOne);
-        
-//             // if (xtalOneClicked = 1) {
-//             //     var xtalOne = "hi";
-//             //     console.log(xtalOne);
-      
-//             //   }
-//             //   else {
-//             //     var xtalOne = Math.floor(Math.random() * 12) + 1;
-//             //     console.log(xtalOne);
-//             //     // var xtalOneClicked = false;
-//             //   }
-
-
-
-
-        
-        
-    
-//         });
-
-//         $("#crystalTwo").on("click", function(){
-//         var xtalTwo = Math.floor(Math.random() * 12) + 1;
-//             console.log(xtalTwo)
-//         });
-
-//         $("#crystalThree").on("click", function(){
-//         var xtalThree = Math.floor(Math.random() * 12) + 1;
-//             console.log(xtalThree)
-//         });
-
-//         $("#crystalFour").on("click", function(){
-//         var xtalFour = Math.floor(Math.random() * 12) + 1;
-//         console.log(xtalFour)
-//         });
-
-    
-
-    
-// });

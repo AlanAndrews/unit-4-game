@@ -6,6 +6,10 @@ body {
     background-position:0 0, 40px 40px;
 }
 
+img {
+    border-style: groove;
+}
+
 header {
     background-color: bisque;
     width: 50%;
@@ -13,7 +17,7 @@ header {
 
 #rules {
     background-color: hsl(46, 81%, 42%);
-    width: 50%;
+    width: 70%;
     border-style: double
 }
 
@@ -22,15 +26,23 @@ header {
         background-color: rgb(8, 252, 28);
         width: 20%;
         text-align: center;
-        border-style: double
+        border-style: double;
+         
     
 }
 
 #randomNum {
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+#matchMe {
     background-color: rgb(252, 8, 101);
     width: 20%;
     text-align: center;
-    border-style: double
+    border-style: double;
+    clear: both;
+    float: left;
 }
 
 #userNumber,
