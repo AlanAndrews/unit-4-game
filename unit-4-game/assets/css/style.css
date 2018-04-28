@@ -46,7 +46,8 @@ header {
 }
 
 #userNumber,
-#words {
+#words,
+#moreWords {
     background-color: rgb(252, 8, 101);
     width: 20%;
     text-align: center;
@@ -54,4 +55,8 @@ header {
     padding: 40p;
     height: 100 px;
     width: 24%;
+}
+
+#userNumber {
+    align-content: center;
 }
