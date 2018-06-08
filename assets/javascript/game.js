@@ -10,22 +10,22 @@ $(document).ready(function(){
     
     initializeGame();
     
-    // $("#randomNum").text(randomNum);
+    $("#randomNum").text(randomNum);
     // $("#userScore").text(NumToGuess);
    
-    // function wins() {
-    //     alert("sup");
-    //     wins++;
-    //     $("#wins").text(wins);
-    //     initializeGame();
-    // }
+    function wins() {
+        alert("win");
+        wins++;
+        $("#wins").text(wins);
+        initializeGame();
+    }
 
-    // function losses() {
-    //     alert("sup");
-    //     losses++;
-    //     $("#losses").text(losses);
-    //     initializeGame();
-    // }
+    function losses() {
+        alert("lose");
+        losses++;
+        $("#losses").text(losses);
+        initializeGame();
+    }
 
     function initializeGame() {
         randomNum = Math.floor(Math.random() * 121) + 19;
@@ -48,17 +48,17 @@ $(document).ready(function(){
         console.log(userNum)
         $("#userNumber").text(userNum);
         if (userNum == randomNum) {
-            wins++;
-            $("#wins").text("Wins: " + wins);
-            initializeGame();
-            // wins();
+            // wins++;
+            // $("#wins").text("Wins: " + wins);
+            // initializeGame();
+            wins();
 
         }
         else if (userNum > randomNum) {
-            losses++;
-            $("#losses").text("Losses: " + losses);
-            initializeGame();
-            // losses();
+            // losses++;
+            // $("#losses").text("Losses: " + losses);
+            // initializeGame();
+            losses();
         }
         // if (userNum == randomNum) {
         //     wins();
